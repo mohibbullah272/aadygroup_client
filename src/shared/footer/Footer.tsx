@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router';
 
 const Footer = () => {
@@ -59,7 +59,7 @@ const Footer = () => {
              
  <span className="text-gray-300">300 Feet Lake Point, ICCB Corner, Kuril, Bashundhara,
 
-Dhaka. Bangladesh.</span>
+Dhaka, Bangladesh.</span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="mr-3 text-[#F9D342]" />
@@ -72,11 +72,11 @@ Dhaka. Bangladesh.</span>
               </li>
               <span className='text-yellow-300 flex  items-center  font-medium '>    <FaMapMarkerAlt className="mt-1 mr-1 text-[#F9D342]" />Corporate Office</span>              <li className="flex items-start">
             
-                <span className="text-gray-300">31 Mak Khan Tower, Green Road Dhanmondi, Dhaka. Bangladesh.</span>
+                <span className="text-gray-300">31 Mak Khan Tower, Green Road Dhanmondi, Dhaka, Bangladesh.</span>
               </li>
             <li className="flex items-center">
-                <FaPhone className="mr-3 text-[#F9D342]" />
-            <p className='flex flex-col '>  
+            <FaWhatsapp className='text-green-600'/>
+            <p className='flex flex-col ml-2'>  
               01611-210-192</p>
               </li>
               <li className="flex items-center">

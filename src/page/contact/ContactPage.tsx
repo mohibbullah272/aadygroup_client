@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 const ContactPage = () => {
@@ -242,7 +243,7 @@ const ContactPage = () => {
                                         <div>
                                             <p className="font-medium text-gray-900">Address</p>
 <p className="text-gray-600">300 Feet Lake Point, ICCB Corner, Kuril, Bashundhara,</p>
-                                <p className="text-gray-600">Dhaka. Bangladesh.</p>
+                                <p className="text-gray-600">Dhaka, Bangladesh.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center">
@@ -276,14 +277,14 @@ const ContactPage = () => {
                                         <span className="text-red-700 mr-3 mt-1">📍</span>
                                         <div>
                                             <p className="font-medium text-gray-900">Address</p>
-<p className="text-gray-600">31 Mak Khan Tower, Green Road Dhanmondi, Dhaka. Bangladesh.</p>
+<p className="text-gray-600">31 Mak Khan Tower, Green Road Dhanmondi, Dhaka, Bangladesh.</p>
                             
                                         </div>
                                     </div>
                                     <div className="flex items-center">
-                                        <span className="text-blue-600 mr-3">📞</span>
+                                        <span className="text-blue-600 mr-3"><FaWhatsapp className='text-green-600'/></span>
                                         <div>
-                                            <p className='font-medium'>Phone</p>
+                                            <p className='font-medium'>WhatsApp</p>
                                         <p className="text-gray-600">01611-210-192</p>
 
 

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router';
 import {Helmet} from "react-helmet";
-import { FaEnvelope, FaIndustry, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaIndustry, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { Badge } from '@/components/ui/badge';
 import { MoveRight } from 'lucide-react';
 const AboutUs = () => {
@@ -316,9 +316,9 @@ Aady Group
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
               >
-          <FaPhone></FaPhone>
+          <FaWhatsapp className='text-green-600'/>
           <p className='flex flex-col '>
-   <span>01811-661545</span>
+   <span>01711-210-192</span>
 
           </p>
               </motion.div>
@@ -331,7 +331,7 @@ Aady Group
               >
           <FaPhone></FaPhone>
           <p className='flex flex-col '>
-          <span>01711-268020</span>
+          <span>01711-268-020</span>
 
           </p>
               </motion.div>
@@ -352,7 +352,7 @@ Aady Group
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
               >
-               Our Sub Branches
+             Subsidiary Organization
               </motion.h3>
               <motion.p
                 className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
@@ -362,7 +362,7 @@ Aady Group
                 transition={{ delay: 0.4 }}
               >
 
-<MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '>  Aady Associate </Badge>
+<MoveRight/>  <Badge className='bg-gray-700 py-2 px-4 '>  Aady Associate </Badge>
 
               </motion.p>
               <motion.p
@@ -382,7 +382,7 @@ Aady Group
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                             <MoveRight/>    <Badge className='bg-gray-700 py-2 px-5 '>  Aady Digital Solutions </Badge>
+                             <MoveRight/>    <Badge className='bg-gray-700 py-2 px-4 '>  Aady Digital Solutions </Badge>
 
 
               </motion.p>
@@ -394,6 +394,17 @@ Aady Group
                 transition={{ delay: 0.4 }}
               >
            <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Aady Mart Bangladesh </Badge>
+
+
+              </motion.p>
+              <motion.p
+                className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Anonto Event Management </Badge>
 
 
               </motion.p>
