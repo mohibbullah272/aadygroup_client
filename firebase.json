@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "dist", 
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "https://aadymart-d8e61.web.app/**",
+        "destination": "https://www.aadymart.xyz/",
+        "type": 301
+      },
+      {
+        "source": "https://aadymart-d8e61.firebaseapp.com/**",
+        "destination": "https://www.aadymart.xyz/",
+        "type": 301
+      }
+    ]
+  }
+}
