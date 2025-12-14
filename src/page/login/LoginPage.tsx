@@ -1,6 +1,6 @@
 import React, {  useState } from 'react';
 import { motion } from 'framer-motion';
-import { Eye, EyeOff, Mail, Lock, LogIn, LoaderIcon,  } from 'lucide-react';
+import { Eye, EyeOff, Mail, Lock, LoaderIcon,  } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
 import { useAuth } from '@/hooks/useAuth';
 import { toast } from 'react-toastify';
