@@ -4,7 +4,7 @@ import { Eye, EyeOff, Mail, Lock, User, LoaderIcon } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
 import { useAuth } from '@/hooks/useAuth';
 import { toast } from 'react-toastify';
-
+import bg from '../../assets/prithiviraj-a-iVymbcRRbF0-unsplash.jpg'
 const SignUpPage = () => {
     const [loading,setLoading]=useState(false)
     const {googleLogin,createAccount,verificationViaEmail}=useAuth()
@@ -103,30 +103,25 @@ navigate('/')
   };
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center px-4 py-8">
+    <div style={{ backgroundImage: `url(${bg})`,
+    backgroundRepeat:"no-repeat",
+    backgroundPosition:"center" ,
+    backgroundSize:"cover"}} className="min-h-screen flex items-center justify-center px-4 py-8">
       <motion.div
         animate={containerVariants}
         className="w-full max-w-md"
       >
         {/* Header Section */}
         <motion.div animate={itemVariants} className="text-center mb-5">
-          <motion.div
-            className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-red-600 to-red-700 mb-6"
-            whileHover={{ rotate: 360 }}
-            transition={{ duration: 0.6 }}
-          >
-            <User className="w-8 h-8 text-white" />
-          </motion.div>
-          
           <motion.h1 
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-3"
+            className="text-3xl md:text-4xl font-bold text-gray-100 mb-3"
             animate={itemVariants}
           >
             Create Account
           </motion.h1>
           
           <motion.p 
-            className="text-gray-600 text-base md:text-lg leading-relaxed"
+            className="text-gray-200 text-base md:text-lg leading-relaxed"
             animate={itemVariants}
           >
             Join us today to explore more amazing features and connect with our community
@@ -136,13 +131,13 @@ navigate('/')
         {/* Form Section */}
         <motion.div 
           animate={itemVariants}
-          className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-sm"
+          className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 md:p-8 shadow-sm"
         >
           <div className="space-y-6">
             <form onSubmit={handleSubmit}>
             {/* Email Field */}
             <motion.div animate={itemVariants}>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-100 mb-2">
                 Email Address
               </label>
               <motion.div 
@@ -168,7 +163,7 @@ navigate('/')
 
             {/* Password Field */}
             <motion.div animate={itemVariants}>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-900 mb-2">
+              <label htmlFor="password" className="block text-sm font-medium text-gray-100 mb-2">
                 Password
               </label>
               <motion.div 
@@ -218,7 +213,7 @@ navigate('/')
                 <div className="w-full border-t border-gray-300"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-4 bg-gray-50 text-gray-500">or continue with</span>
+                <span className="px-4 mb-4 text-gray-100">or continue with</span>
               </div>
             </motion.div>
 
@@ -252,11 +247,7 @@ navigate('/')
               Continue with Google
             </motion.button>
           </div>
-        </motion.div>
-
-        {/* Footer */}
-        <motion.div animate={itemVariants} className="text-center mt-8">
-          <p className="text-gray-600">
+          <p className="text-gray-100 p-3">
             Already have an account?{' '}
             <Link 
           to={'/signin'}
@@ -267,6 +258,7 @@ navigate('/')
             </Link>
           </p>
         </motion.div>
+
       </motion.div>
     </div>
   );

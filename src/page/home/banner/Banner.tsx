@@ -105,7 +105,7 @@ const Banner = () => {
     );
   }
   return (
-    <section ref={ref} className="bg-white md:mt-20 flex items-center justify-center py-12 lg:py-0">
+    <section ref={ref} className="md:mt-20 flex items-center justify-center py-12 lg:py-0">
       <div  className=" px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex justify-center md:flex-row flex-col-reverse gap-8 lg:gap-16 items-center">
           

@@ -4,6 +4,8 @@ import {Helmet} from "react-helmet";
 import { FaEnvelope, FaIndustry, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { Badge } from '@/components/ui/badge';
 import { MoveRight } from 'lucide-react';
+import bg from '../../assets/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg'
+import bg2 from '../../assets/pawel-czerwinski-M40QnK-PXkI-unsplash.jpg'
 const AboutUs = () => {
   // Animation variants
   const fadeInUp = {
@@ -240,7 +242,12 @@ const AboutUs = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-gray-50 py-16 px-6">
+      <section style={{
+        backgroundImage:`url(${bg})`,
+        backgroundPosition:"center",
+        backgroundSize:"cover",
+        backgroundRepeat:"no-repeat"
+      }}  className="md:bg-fixed bg-scroll will-change-transform py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div
             className="grid md:grid-cols-2 gap-12"
@@ -331,7 +338,7 @@ Aady Group
               >
           <FaPhone></FaPhone>
           <p className='flex flex-col '>
-          <span>01711-268-020</span>
+          <span>01811-661-545</span>
 
           </p>
               </motion.div>
@@ -372,7 +379,7 @@ Aady Group
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                <MoveRight/>   <Badge className='bg-gray-700 py-2 px-5 '> AD Flower Shop </Badge>
+                <MoveRight/>   <Badge className='bg-gray-700 py-2 px-5 '>Aady Flower Shop </Badge>
 
               </motion.p>
               <motion.p
@@ -491,37 +498,31 @@ Aady Group
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-gray-700 text-white py-16 px-6">
+      <section style={{ backgroundImage: `url(${bg2})`,
+    backgroundRepeat:"no-repeat",
+    backgroundPosition:"center" ,
+    backgroundSize:"cover"}}  className="md:bg-fixed will-change-transform bg-scroll text-gray-800 py-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <motion.div
+          <div
             className="text-center mb-12"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: "-100px" }}
-            animate={fadeInUp}
           >
-            <motion.h2
+            <h2
               className="text-3xl font-bold mb-4"
-              animate={fadeInUp}
+        
             >
               Why Choose Aady Group ?
-            </motion.h2>
-            <motion.p
-              className="text-gray-300 max-w-2xl mx-auto"
-              animate={fadeInUp}
-              transition={{ delay: 0.2 }}
+            </h2>
+            <p
+              className="text-gray-600 max-w-2xl mx-auto"
             >
               With nearly two decades of experience, we bring unmatched expertise
               and dedication to every project we undertake.
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
+          <div
             className="grid md:grid-cols-3 gap-8"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: "-100px" }}
-            animate={stagger}
+           
           >
             {[
               {
@@ -540,20 +541,14 @@ Aady Group
                 description: "Unwavering commitment to quality and customer satisfaction in every service we provide.",
               },
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
                 className="text-center"
-                animate={scaleIn}
-                whileHover={{ y: -10, scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+               
               >
-                <motion.div
+                <div
                   className="w-16 h-16   rounded-full flex items-center justify-center mx-auto mb-4"
-                  whileHover={{
-                    rotate: 360,
-                    backgroundColor: "#F9D342",
-                  }}
-                  transition={{ duration: 0.6 }}
+               
                 >
                   <motion.span
                     className="text-2xl"
@@ -562,7 +557,7 @@ Aady Group
                   >
                     {item.icon}
                   </motion.span>
-                </motion.div>
+                </div>
                 <motion.h4
                   className="font-bold text-xl mb-3"
                   initial={{ opacity: 0, y: 20 }}
@@ -573,7 +568,7 @@ Aady Group
                   {item.title}
                 </motion.h4>
                 <motion.p
-                  className="text-gray-300"
+                  className="text-gray-600"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
@@ -581,15 +576,11 @@ Aady Group
                 >
                   {item.description}
                 </motion.p>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="bg-gray-700 py-16 px-6 overflow-hidden">
-        <div className="max-w-4xl mx-auto text-center text-white">
+        <div className="max-w-4xl mt-5 mx-auto text-center text-gray-900">
           <motion.h2
             className="text-3xl font-bold mb-4"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -631,7 +622,7 @@ Aady Group
 </Link>
  <Link to={'/services/event-solutions'}>
  <motion.button
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-red-700 transition-colors"
+              className="border-2 border-white text-gray-600 px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-red-700 transition-colors"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 10px 25px -5px rgb(0 0 0 / 0.3)",
@@ -645,6 +636,8 @@ Aady Group
           </motion.div>
         </div>
       </section>
+
+ 
     </div>
     </>
   );

@@ -9,7 +9,7 @@ const Main = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="min-h-screen flex flex-col justify-center">
+            <div className="min-h-screen flex flex-col mt-10 justify-center">
 
 
             <ScrollToTop></ScrollToTop>

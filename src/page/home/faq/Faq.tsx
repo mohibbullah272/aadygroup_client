@@ -122,7 +122,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ className = '' }) => {
   const categories: string[] = [...new Set(faqData.map(item => item.category))];
 
   return (
-    <div className={`w-full max-w-4xl mx-auto px-4 py-12 ${className}`} style={{ backgroundColor: '#FFFFFF' }}>
+    <div className={`w-full max-w-4xl mx-auto px-4 py-12 ${className}`} >
       {/* Header */}
       <div className="text-center mb-12">
         <div className="flex items-center justify-center mb-4">

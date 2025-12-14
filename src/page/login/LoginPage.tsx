@@ -4,7 +4,7 @@ import { Eye, EyeOff, Mail, Lock, LogIn, LoaderIcon,  } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
 import { useAuth } from '@/hooks/useAuth';
 import { toast } from 'react-toastify';
-
+import bg from '../../assets/prithiviraj-a-iVymbcRRbF0-unsplash.jpg'
 
 
 
@@ -103,30 +103,24 @@ navigate('/')
   };
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center px-4 py-8">
+    <div  style={{ backgroundImage: `url(${bg})`,
+    backgroundRepeat:"no-repeat",
+    backgroundPosition:"center" ,
+    backgroundSize:"cover"}}  className="min-h-screen    flex items-center justify-center px-4 py-8">
       <motion.div
         animate={containerVariants}
         className="w-full max-w-md"
       >
         {/* Header Section */}
         <motion.div animate={itemVariants} className="text-center mb-5">
-          <motion.div
-            className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-red-600 to-red-700 mb-6"
-            whileHover={{ rotate: 360 }}
-            transition={{ duration: 0.6 }}
-          >
-            <LogIn className="w-8 h-8 text-white" />
-          </motion.div>
-          
           <motion.h1 
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-3"
+            className="text-3xl md:text-4xl font-bold text-gray-100 mb-3"
             animate={itemVariants}
           >
             Welcome Back
-          </motion.h1>
-          
+          </motion.h1>  
           <motion.p 
-            className="text-gray-600 text-base md:text-lg leading-relaxed"
+            className="text-gray-300 text-base md:text-lg leading-relaxed"
             animate={itemVariants}
           >
             Sign in to your account to continue exploring amazing features
@@ -135,16 +129,15 @@ navigate('/')
 
         {/* Form Section */}
         <motion.div 
-        
           animate={itemVariants}
-          className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-sm"
+          className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 md:p-8 shadow-sm"
         >
           <form onSubmit={handleLogin}>
 
           <div className="space-y-6">
             {/* Email Field */}
             <motion.div animate={itemVariants}>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-100 mb-2">
                 Email Address
               </label>
               <motion.div 
@@ -171,17 +164,10 @@ navigate('/')
             {/* Password Field */}
             <motion.div animate={itemVariants}>
               <div className="flex items-center justify-between mb-2">
-                <label htmlFor="password" className="block text-sm font-medium text-gray-900">
+                <label htmlFor="password" className="block text-sm font-medium text-gray-100">
                   Password
                 </label>
-                <motion.a
-                  href="#"
-                  className="text-sm text-red-600 hover:text-red-700 transition-colors duration-200"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Forgot password?
-                </motion.a>
+        
               </div>
               <motion.div 
                 className="relative"
@@ -211,18 +197,7 @@ navigate('/')
               </motion.div>
             </motion.div>
 
-            {/* Remember Me Checkbox */}
-            <motion.div animate={itemVariants} className="flex items-center">
-              <input
-                id="remember-me"
-                name="remember-me"
-                type="checkbox"
-                className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded transition-colors duration-200"
-              />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
-                Remember me for 30 days
-              </label>
-            </motion.div>
+
 
             {/* Sign In Button */}
             <motion.button
@@ -241,7 +216,7 @@ navigate('/')
                 <div className="w-full border-t border-gray-300"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-4 bg-gray-50 text-gray-500">or continue with</span>
+                <span className="px-4 mb-5 text-gray-100">or continue with</span>
               </div>
             </motion.div>
 
@@ -275,21 +250,18 @@ navigate('/')
               Continue with Google
             </motion.button>
           </div>
-          </form>
-        </motion.div>
-
-        {/* Footer */}
-        <motion.div animate={itemVariants} className="text-center mt-8">
-          <p className="text-gray-600">
+          <p className="text-gray-200 p-3">
             Don't have an account?{' '}
             <Link
             to={'/signup'}
               className="text-red-600 hover:text-red-700 font-semibold transition-colors duration-200"
             >
               Sign up
-            </Link>
-          </p>
+            </Link>   </p>
+          </form>
         </motion.div>
+
+    
       </motion.div>
     </div>
   );

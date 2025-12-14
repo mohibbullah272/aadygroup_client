@@ -4,7 +4,7 @@ import ServicesSlider from "@/page/home/photo_gallery/PhotoGallery";
 import FAQAccordion from "@/page/home/faq/Faq";
 import FeedbackSection from "@/page/home/feedbacksection/FeedbackSection";
 import OurGoalsSection from "./our_Goal_Section/OurGoalSection";
-
+import bg from '../../assets/pawel-czerwinski-M40QnK-PXkI-unsplash.jpg'
 
 
 const Home = () => {
@@ -12,12 +12,17 @@ const Home = () => {
 
     return (
         <div>
-           <Banner></Banner>
-        <div className="bg-gray-50"><OurService></OurService></div>
+       <Banner></Banner>
+        <div ><OurService></OurService></div>
         <ServicesSlider></ServicesSlider>
         <OurGoalsSection></OurGoalsSection>
         <FeedbackSection></FeedbackSection>
-        <FAQAccordion></FAQAccordion>
+
+   <div style={{ backgroundImage: `url(${bg})`,
+    backgroundRepeat:"no-repeat",
+    backgroundPosition:"center" ,
+    backgroundSize:"cover"}} >      <FAQAccordion></FAQAccordion>   </div>
+    
         </div>
     );
 };
