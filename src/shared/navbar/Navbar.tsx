@@ -34,7 +34,7 @@ const Navbar = () => {
         { path: '/services/event-solutions', label: 'Event Solutions' },
         { path: '/services/tour-travel', label: 'Tour & Travel' },
         { path: '/services/car-rent', label: 'Car Rent' },
-        { path: '/services/hotel-resort', label: 'Hotel & Resort' },
+        { path: '/services/hotel_resort', label: 'Hotel & Resort' },
       ]
     },
     {

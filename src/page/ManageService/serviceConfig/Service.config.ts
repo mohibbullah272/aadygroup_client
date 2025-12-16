@@ -552,6 +552,80 @@ interface FormField {
         }
       ]
     },
+    'hotel': {
+      id: 'hotel',
+      name: 'Hotel & Resort',
+      apiEndpoint: '/api/hotel_resort',
+      defaultValues: {
+        image: '',
+        title: '',
+        description: '',
+        features: [],
+        minPrice: 0,
+        maxPrice: 0
+      },
+      fields: [
+        {
+          name: 'image',
+          label: 'Service Image',
+          type: 'file',
+          required: true,
+        },
+        {
+          name: 'title',
+          label: 'Service Title',
+          type: 'text',
+          placeholder: 'Enter service title',
+          required: true
+        },
+        {
+          name: 'description',
+          label: 'Description',
+          type: 'textarea',
+          placeholder: 'Enter service description',
+          required: true
+        },
+        {
+          name: 'features',
+          label: 'Features/Tags',
+          type: 'checkbox-group',
+          options: [
+            'Room Booking',
+            'Suite Reservation',
+            'Resort Package',
+            'Tour Package',
+            'Airport Transfer',
+            'Spa Booking',
+            'Restaurant Reservation',
+            'Event Booking',
+            'Adventure Activity',
+            'Car Rental',
+            'Laundry Service',
+            'Early Check-in',
+            'Late Check-out',
+            'All-Inclusive Deal',
+            'Honeymoon Package',
+            'Family Package',
+            'Meeting Room Hire',
+            'Wedding Planning'
+          ]
+        },
+        {
+          name: 'minPrice',
+          label: 'Minimum Price',
+          type: 'number',
+          min: 0,
+          required: true
+        },
+        {
+          name: 'maxPrice',
+          label: 'Maximum Price',
+          type: 'number',
+          min: 0,
+          required: true
+        }
+      ]
+    },
     'IT-Support': {
       id: 'IT-Support',
       name: 'IT-Support',

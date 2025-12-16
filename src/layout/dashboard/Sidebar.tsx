@@ -127,6 +127,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   Manage Office-Stationery
                 </NavLink>
                 <NavLink
+                  to="/dashboard/manage-services/hotel_resort"
+                  className={({ isActive }) =>
+                    `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                      isActive
+                        ? 'bg-[#F9D342] text-[#1A1A1A]'
+                        : 'text-gray-900 hover:bg-[#F9D342] hover:text-[#1A1A1A]'
+                    }`
+                  }
+                  onClick={() => setSidebarOpen(false)}
+                >
+                  Manage Hotel & Resort
+                </NavLink>
+                <NavLink
                   to="/dashboard/manage-services/tour-travel"
                   className={({ isActive }) =>
                     `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
@@ -389,6 +402,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   onClick={() => setSidebarOpen(false)}
                 >
                   Manage Office-Stationery
+                </NavLink>
+                <NavLink
+                  to="/dashboard/manage-services/hotel_resort"
+                  className={({ isActive }) =>
+                    `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                      isActive
+                        ? 'bg-[#F9D342] text-[#1A1A1A]'
+                        : 'text-gray-900 hover:bg-[#F9D342] hover:text-[#1A1A1A]'
+                    }`
+                  }
+                  onClick={() => setSidebarOpen(false)}
+                >
+                  Manage Hotel & Resort
                 </NavLink>
                 <NavLink
                   to="/dashboard/manage-services/tour-travel"

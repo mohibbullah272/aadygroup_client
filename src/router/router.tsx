@@ -39,6 +39,8 @@ import ITSupportServicesPage from "@/page/IT-Support/IT-Support";
 import ManageBlog from "@/page/ManageService/ManageBlog";
 import Blogs from "@/page/blogs/blogs";
 import BlogDetails from "@/page/blog-details/BlogDetails";
+import ManageHotel from "@/page/ManageService/ManageHotel";
+import HotelResortServicesPage from "@/page/hotel/hotelServicePage";
 const ManageUser =lazyWithRetry(()=>import("@/page/ManageService/ManageUser")) 
 
 const lazyLoad = (Component:any) => (
@@ -116,6 +118,10 @@ const router = createBrowserRouter([
                 element: lazyLoad(ConsultancyServicesPage)
             },
             {
+                path: '/services/hotel_resort',
+                element: lazyLoad(HotelResortServicesPage)
+            },
+            {
                 path: "/services/web-development",
                 element: lazyLoad(WebDevelopmentPage)
             },
@@ -188,6 +194,10 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/manage-services/IT-Support',
                 element: lazyLoad(ManageIT)
+            },
+            {
+                path: '/dashboard/manage-services/hotel_resort',
+                element: lazyLoad(ManageHotel)
             },
             {
                 path: '/dashboard/manage-blogs',
