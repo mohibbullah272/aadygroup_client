@@ -382,6 +382,7 @@ Aady Group
                 <MoveRight/>   <Badge className='bg-gray-700 py-2 px-5 '>Aady Flower Shop </Badge>
 
               </motion.p>
+              
               <motion.p
                 className="text-gray-600 text-xl my-2 flex items-center gap-2 font-bold leading-relaxed"
                 initial={{ opacity: 0 }}
@@ -393,6 +394,7 @@ Aady Group
 
 
               </motion.p>
+         
               <motion.p
                 className="text-gray-600 text-xl flex items-center gap-2 font-bold leading-relaxed"
                 initial={{ opacity: 0 }}
@@ -404,6 +406,19 @@ Aady Group
 
 
               </motion.p>
+                   
+              <motion.p
+                className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-7 '> M I K Tourist & Resort </Badge>
+
+
+              </motion.p>
+
               <motion.p
                 className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
                 initial={{ opacity: 0 }}
@@ -415,6 +430,7 @@ Aady Group
 
 
               </motion.p>
+
             </motion.div>
           </motion.div>
         </div>
