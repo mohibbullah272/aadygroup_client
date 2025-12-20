@@ -97,7 +97,7 @@ const AboutUs = () => {
       icon: "💻",
     },
     {
-      title: "Hotel & Resort",
+      title: "Hotel & Resorts",
       description: "Premium accommodation and hospitality services with luxury amenities and exceptional guest care.",
       icon: "🏨",
     },
@@ -414,7 +414,7 @@ Aady Group
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-7 '> M I K Tourist & Resort </Badge>
+           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-7 '> M I K Tourist & Resorts </Badge>
 
 
               </motion.p>

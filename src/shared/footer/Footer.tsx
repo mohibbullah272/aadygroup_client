@@ -10,7 +10,7 @@ const Footer = () => {
   { label: "Architectural Design", to:'/services/architectural-design'},
 {   label: "Advertising",to:'/services/advertising'},
 {   label: "Electric & Electronics",to:'/services/electric-electronics'},
-{   label: "Hotel & Resort",to:'/services/hotel_resort'}
+{   label: "Hotel & Resorts",to:'/services/hotel_resort'}
   ];
 
   return (

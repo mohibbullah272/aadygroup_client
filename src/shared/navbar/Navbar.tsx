@@ -34,7 +34,7 @@ const Navbar = () => {
         { path: '/services/event-solutions', label: 'Event Solutions' },
         { path: '/services/tour-travel', label: 'Tour & Travel' },
         { path: '/services/car-rent', label: 'Car Rent' },
-        { path: '/services/hotel_resort', label: 'Hotel & Resort' },
+        { path: '/services/hotel_resort', label: 'Hotel & Resorts' },
       ]
     },
     {
@@ -144,6 +144,10 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Navigation */}
+           
+
+            {/* Desktop Auth Section */}
+            <div className="hidden lg:flex items-center gap-2 xl:gap-3">
             <div className="hidden lg:flex items-center gap-1">
               {navLinks.map((link) => (
                 <NavLink
@@ -202,8 +206,6 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Desktop Auth Section */}
-            <div className="hidden lg:flex items-center gap-2 xl:gap-3">
               {!user ? (
                 <>
                   {authLinks.map((link) => (

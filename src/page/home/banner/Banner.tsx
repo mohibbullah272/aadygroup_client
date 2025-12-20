@@ -119,15 +119,15 @@ const Banner = () => {
      ease: [0, 0.71, 0.2, 1.01],
    }}
    viewport={{ once: true, amount: 0.5 }} 
-          className="space-y-8 text-center lg:text-left order-2 lg:order-1">
+          className="space-y-8 text-center flex-1/2 lg:text-left order-2 lg:order-1">
             <div className="space-y-6">
               <div className="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800 leading-tight">
-         <div>Complete Event & IT Digital <span className='text-red-600'>Solutions </span>  </div>
-           <Badge className='bg-yellow-400 backdrop-blur-lg text-gray-900'>Everything You Need, All in One Place.</Badge>
+         <div>Complete Solutions for Modern <span className='text-red-600'> Business Demands.</span></div>
+           <Badge className='bg-yellow-400 backdrop-blur-lg text-gray-900'>All Your Business & Personal Needs, Seamlessly Connected.</Badge>
               </div>
               
               <p className="text-lg md:text-xl text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                We provide comprehensive solutions for all your business needs. From event management to web development, we've got you covered with professional expertise.
+              For your office supplies, website, hotel booking, or party planning—make one call. We provide reliable, professional service for all of it.
               </p>
             </div>
 
@@ -154,7 +154,7 @@ const Banner = () => {
              ease: [0, 0.71, 0.2, 1.01],
            }}
            viewport={{ once: true, amount: 0.5 }} 
-          className="order-1 lg:order-3">
+          className="order-1 lg:order-3 flex-1/2">
             <div className="relative max-w-md mx-auto lg:max-w-lg">
               
               {/* Slider Container */}
