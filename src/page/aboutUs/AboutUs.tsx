@@ -317,31 +317,36 @@ Aady Group
            
               </motion.p>
               <motion.div
-               className="text-gray-600 flex items-center mt-3 gap-2  font-semibold leading-relaxed"
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.4 }}
-              >
-          <FaWhatsapp className='text-green-600'/>
-          <p className='flex flex-col '>
-   <span>01711-210-192</span>
-
-          </p>
-              </motion.div>
-              <motion.div
                className="text-gray-600 flex items-center  gap-2  font-semibold leading-relaxed"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
               >
-          <FaPhone></FaPhone>
+       
+          <FaWhatsapp className='text-green-600'/>
           <p className='flex flex-col '>
           <span>01811-661-545</span>
 
           </p>
               </motion.div>
+
+              <motion.div
+               className="text-gray-600 flex items-center mt-3 gap-2  font-semibold leading-relaxed"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4 }}
+              >
+                   <FaPhone></FaPhone>
+   
+          <p className='flex flex-col '>
+   <span>01711-210-192</span>
+
+          </p>
+              </motion.div>
+
+
             </motion.div>
             <motion.div
               className="bg-white p-8 rounded-lg shadow-sm border-l-4 border-yellow-400"
@@ -379,7 +384,7 @@ Aady Group
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                <MoveRight/>   <Badge className='bg-gray-700 py-2 px-5 '>Aady Flower Shop </Badge>
+                <MoveRight/>   <Badge className='bg-gray-700 py-2 px-5 '>Aady Flower Mart </Badge>
 
               </motion.p>
               
