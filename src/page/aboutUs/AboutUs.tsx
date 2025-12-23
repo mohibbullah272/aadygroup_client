@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router';
 import {Helmet} from "react-helmet";
-import { FaEnvelope, FaIndustry, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaIndustry, FaLocationArrow, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { Badge } from '@/components/ui/badge';
 import { MoveRight } from 'lucide-react';
 import bg from '../../assets/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg'
@@ -272,7 +272,7 @@ const AboutUs = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
               >
-                Our Honorable CEO
+                Our Honorable Chairman
               </motion.h3>
               <motion.p
                 className="text-gray-600 text-xl font-bold leading-relaxed"
@@ -295,7 +295,18 @@ const AboutUs = () => {
 Aady Group 
               </motion.p>
               <motion.p
-               className="text-gray-600 flex items-center mt-3 gap-2  font-semibold leading-relaxed"
+               className="text-gray-600 flex items-center gap-2  font-semibold leading-relaxed"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4 }}
+              >
+         
+                <FaIndustry></FaIndustry>
+Aady Mart Bangladesh Ltd
+              </motion.p>
+              <motion.p
+               className="text-gray-600 flex items-center  gap-2  font-semibold leading-relaxed"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
@@ -332,7 +343,7 @@ Aady Group
               </motion.div>
 
               <motion.div
-               className="text-gray-600 flex items-center mt-3 gap-2  font-semibold leading-relaxed"
+               className="text-gray-600 flex items-center gap-2  font-semibold leading-relaxed"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
@@ -342,6 +353,23 @@ Aady Group
    
           <p className='flex flex-col '>
    <span>01711-210-192</span>
+
+          </p>
+              </motion.div>
+
+              <motion.div
+               className="text-gray-600 flex items-center gap-2  font-semibold leading-relaxed"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4 }}
+              >
+               <FaLocationArrow className='text-xl'></FaLocationArrow>
+   
+          <p>
+          300 Feet Lake Point, ICCB Corner, Kuril, Bashundhara,
+
+Dhaka, Bangladesh.
 
           </p>
               </motion.div>
@@ -366,6 +394,7 @@ Aady Group
               >
              Subsidiary Organization
               </motion.h3>
+
               <motion.p
                 className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
                 initial={{ opacity: 0 }}
@@ -375,6 +404,17 @@ Aady Group
               >
 
 <MoveRight/>  <Badge className='bg-gray-700 py-2 px-4 '>  Aady Associate </Badge>
+
+              </motion.p>
+              <motion.p
+                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+
+<MoveRight/>  <Badge className='bg-gray-700 py-2 px-4'>  Master Dotcom </Badge>
 
               </motion.p>
               <motion.p
