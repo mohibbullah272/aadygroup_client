@@ -72,7 +72,7 @@ const ServiceDetailsPage = () => {
     );
   }
 
-  const pageUrl = `https://aadymart.com/services/${api}/${id}`;
+  const pageUrl = `https://aadygroup.com/services/${api}/${id}`;
   const truncatedDesc = truncateDescription(service.description || '');
   const keywords = generateKeywords();
 

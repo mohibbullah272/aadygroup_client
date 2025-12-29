@@ -303,7 +303,7 @@ Aady Group
               >
          
                 <FaIndustry></FaIndustry>
-Aady Mart Bangladesh Ltd
+Aady Mart Bangladesh 
               </motion.p>
               <motion.p
                className="text-gray-600 flex items-center  gap-2  font-semibold leading-relaxed"
@@ -403,7 +403,18 @@ Dhaka, Bangladesh.
                 transition={{ delay: 0.4 }}
               >
 
-<MoveRight/>  <Badge className='bg-gray-700 py-2 px-4 '>  Aady Associate </Badge>
+<MoveRight/>  <Badge className='bg-gray-700 py-2 px-4 '> Jalrang </Badge>
+
+              </motion.p>
+              <motion.p
+                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+
+<MoveRight/>  <Badge className='bg-gray-700 py-2 px-3 '>  Aady Associate </Badge>
 
               </motion.p>
               <motion.p
