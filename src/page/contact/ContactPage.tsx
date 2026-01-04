@@ -55,7 +55,7 @@ const ContactPage = () => {
         {
             icon: "📍",
             title: "Our Location",
-            details: ["Tropicana Tower, Shaheed Syed Nazrul Islam Sharani" , "Dhaka, Bangladesh"],
+            details: ["300 Feet Lake Point, ICCB Corner, Kuril, Bashundhara," , "Dhaka, Bangladesh"],
             color: "text-red-700"
         },
         {
