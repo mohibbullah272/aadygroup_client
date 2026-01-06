@@ -72,7 +72,7 @@ Dhaka, Bangladesh.</span>
               </li>
               <span className='text-yellow-300 flex  items-center  font-medium '>    <FaMapMarkerAlt className="mt-1 mr-1 text-[#F9D342]" />Corporate Office</span>              <li className="flex items-start">
             
-                <span className="text-gray-300">31 Mak Khan Tower, Green Road Dhanmondi, Dhaka, Bangladesh.</span>
+                <span className="text-gray-300">Taltala,  Agargaon,  Sher-E- Banglanagar, Dhaka -1207 Bangladesh.</span>
               </li>
             <li className="flex items-center">
             <FaWhatsapp className='text-green-600'/>
