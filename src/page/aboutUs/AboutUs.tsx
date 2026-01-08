@@ -367,9 +367,7 @@ Aady Mart Bangladesh
                <FaLocationArrow className='text-xl'></FaLocationArrow>
    
           <p>
-          300 Feet Lake Point, ICCB Corner, Kuril, Bashundhara,
-
-Dhaka, Bangladesh.
+          Taltala, Agargaon, Sher-E- Banglanagar, Dhaka-1207 Bangladesh.
 
           </p>
               </motion.div>

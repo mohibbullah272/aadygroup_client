@@ -55,7 +55,7 @@ const ContactPage = () => {
         {
             icon: "📍",
             title: "Our Location",
-            details: ["300 Feet Lake Point, ICCB Corner, Kuril, Bashundhara," , "Dhaka, Bangladesh"],
+            details: ["Taltala, Agargaon, Sher-E- Banglanagar, Dhaka-1207 Bangladesh."],
             color: "text-red-700"
         },
         {
@@ -277,7 +277,7 @@ const ContactPage = () => {
                                         <span className="text-red-700 mr-3 mt-1">📍</span>
                                         <div>
                                             <p className="font-medium text-gray-900">Address</p>
-<p className="text-gray-600">Taltala,  Agargaon,  Sher-E- Banglanagar, Dhaka -1207 Bangladesh</p>
+<p className="text-gray-600">Taltala,  Agargaon,  Sher-E- Banglanagar, Dhaka-1207 Bangladesh</p>
                             
                                         </div>
                                     </div>
