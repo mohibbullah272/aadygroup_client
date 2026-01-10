@@ -250,7 +250,7 @@ const AboutUs = () => {
       }}  className="md:bg-fixed bg-scroll will-change-transform py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div
-            className="grid md:grid-cols-2 gap-12"
+            className="grid grid-cols-1 gap-10"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, margin: "-100px" }}
@@ -392,8 +392,9 @@ Aady Mart Bangladesh
               >
              Subsidiary Organization
               </motion.h3>
-
-              <motion.p
+<div className='grid md:grid-cols-2 grid-cols-1 '>
+  
+<motion.p
                 className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -401,7 +402,7 @@ Aady Mart Bangladesh
                 transition={{ delay: 0.4 }}
               >
 
-<MoveRight/>  <Badge className='bg-gray-700 py-2 px-4 '> Jalrang </Badge>
+<MoveRight/>  <Badge className='bg-gray-700 py-2 px-3 '> Aady Associates </Badge>
 
               </motion.p>
               <motion.p
@@ -412,31 +413,9 @@ Aady Mart Bangladesh
                 transition={{ delay: 0.4 }}
               >
 
-<MoveRight/>  <Badge className='bg-gray-700 py-2 px-3 '>  Aady Associate </Badge>
+<MoveRight/>  <Badge className='bg-gray-700 py-2 px-3 '>  Bay News Network  </Badge>
 
               </motion.p>
-              <motion.p
-                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-
-<MoveRight/>  <Badge className='bg-gray-700 py-2 px-4'>  Master Dotcom </Badge>
-
-              </motion.p>
-              <motion.p
-                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-                <MoveRight/>   <Badge className='bg-gray-700 py-2 px-5 '>Ahona Ful Kutir </Badge>
-
-              </motion.p>
-              
               <motion.p
                 className="text-gray-600 text-xl my-2 flex items-center gap-2 font-bold leading-relaxed"
                 initial={{ opacity: 0 }}
@@ -444,10 +423,55 @@ Aady Mart Bangladesh
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                             <MoveRight/>    <Badge className='bg-gray-700 py-2 px-4 '>  Aady Digital Solutions </Badge>
+                             <MoveRight/>    <Badge className='bg-gray-700 py-2 px-4 '> Jalrang Work Station</Badge>
 
 
               </motion.p>
+              <motion.p
+                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+
+<MoveRight/>  <Badge className='bg-gray-700 py-2 px-5'> Global Tour & Resorts </Badge>
+
+              </motion.p>
+              <motion.p
+                className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Anonto Event Dotcom</Badge>
+
+
+              </motion.p>
+              <motion.p
+                className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '>Purbachal  Hospital BD</Badge>
+
+
+              </motion.p>
+              <motion.p
+                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+                <MoveRight/>   <Badge className='bg-gray-700 py-2 px-5 '>Ahona - Ardrita  Ful Kutir   </Badge>
+
+              </motion.p>
+              
+  
          
               <motion.p
                 className="text-gray-600 text-xl flex items-center gap-2 font-bold leading-relaxed"
@@ -456,22 +480,14 @@ Aady Mart Bangladesh
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Aady Mart Bangladesh </Badge>
+           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Bay Of Bengal  Houseboat </Badge>
 
 
               </motion.p>
                    
-              <motion.p
-                className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-7 '> M I K Tourist & Resorts </Badge>
+   
 
-
-              </motion.p>
+ 
 
               <motion.p
                 className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
@@ -480,11 +496,12 @@ Aady Mart Bangladesh
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Anonto Event Management </Badge>
+           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Master Consultancy  Support</Badge>
 
 
               </motion.p>
 
+</div>
             </motion.div>
           </motion.div>
         </div>
