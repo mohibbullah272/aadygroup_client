@@ -39,7 +39,19 @@ const AboutUs = () => {
     animate: { opacity: 1, scale: 1 },
     transition: { duration: 0.5 },
   };
-
+  const subsidiaries = [
+    'Aady Associates', // 14 characters
+    'Bay News Network', // 15 characters
+    'Aady Mart Bangladesh', // 20 characters
+    'Purbachal Hospital BD', // 20 characters
+    'Jalrang Work Station', // 20 characters
+    'Global Tour & Resorts', // 21 characters
+    'Anonto Event Dotcom', // 19 characters
+    'Aady Digital Solutions', // 22 characters
+    'Ahona - Ardrita Ful Kutir', // 25 characters
+    'Bay Of Bengal Houseboat', // 23 characters
+    'Master Consultancy Support', // 26 characters
+  ].sort((a, b) => a.length - b.length);
   const services = [
     {
       title: "IT-Support",
@@ -375,134 +387,48 @@ Aady Mart Bangladesh
 
             </motion.div>
             <motion.div
-              className="bg-white p-8 rounded-lg shadow-sm border-l-4 border-yellow-400"
-              animate={fadeInRight}
-              whileHover={{
-                y: -5,
-                boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
-              }}
+      className="bg-white p-8 rounded-lg shadow-sm border-l-4 border-yellow-400"
+      animate={fadeInRight}
+      whileHover={{
+        y: -5,
+        boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+      }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <motion.h3
+        className="text-2xl font-bold text-gray-900 mb-6"
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2 }}
+      >
+        Subsidiary Organizations
+      </motion.h3>
+
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+        {subsidiaries.map((subsidiary, index) => (
+          <motion.div
+            key={index}
+            className="flex items-center gap-3 group"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.05 * index }}
+          >
+            <motion.div
+              whileHover={{ x: 5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <motion.h3
-                className="text-2xl font-bold text-gray-900 mb-4"
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-              >
-             Subsidiary Organization
-              </motion.h3>
-<div className='grid md:grid-cols-2 grid-cols-1 '>
-  
-<motion.p
-                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-
-<MoveRight/>  <Badge className='bg-gray-700 py-2 px-3 '> Aady Associates </Badge>
-
-              </motion.p>
-              <motion.p
-                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-
-<MoveRight/>  <Badge className='bg-gray-700 py-2 px-3 '>  Bay News Network  </Badge>
-
-              </motion.p>
-              <motion.p
-                className="text-gray-600 text-xl my-2 flex items-center gap-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-                             <MoveRight/>    <Badge className='bg-gray-700 py-2 px-4 '> Jalrang Work Station</Badge>
-
-
-              </motion.p>
-              <motion.p
-                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-
-<MoveRight/>  <Badge className='bg-gray-700 py-2 px-5'> Global Tour & Resorts </Badge>
-
-              </motion.p>
-              <motion.p
-                className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Anonto Event Dotcom</Badge>
-
-
-              </motion.p>
-              <motion.p
-                className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '>Purbachal  Hospital BD</Badge>
-
-
-              </motion.p>
-              <motion.p
-                className="text-gray-600 text-xl flex items-center gap-2 my-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-                <MoveRight/>   <Badge className='bg-gray-700 py-2 px-5 '>Ahona - Ardrita  Ful Kutir   </Badge>
-
-              </motion.p>
-              
-  
-         
-              <motion.p
-                className="text-gray-600 text-xl flex items-center gap-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Bay Of Bengal  Houseboat </Badge>
-
-
-              </motion.p>
-                   
-   
-
- 
-
-              <motion.p
-                className="text-gray-600 text-xl mt-2 flex items-center gap-2 font-bold leading-relaxed"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-           <MoveRight/>  <Badge className='bg-gray-700 py-2 px-5 '> Master Consultancy  Support</Badge>
-
-
-              </motion.p>
-
-</div>
+              <MoveRight className="text-yellow-500 w-5 h-5 flex-shrink-0" />
             </motion.div>
+            
+            <Badge className="bg-gray-700 hover:bg-gray-800 text-white py-2.5 px-5 font-semibold text-sm transition-colors duration-300 group-hover:bg-yellow-500 group-hover:text-gray-900">
+              {subsidiary}
+            </Badge>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
           </motion.div>
         </div>
       </section>
