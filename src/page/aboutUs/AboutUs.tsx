@@ -43,6 +43,7 @@ const AboutUs = () => {
     'Aady Associates', // 14 characters
     'Bay News Network', // 15 characters
     'Aady Mart Bangladesh', // 20 characters
+    'Bay Blue Island World', // 20 characters
     'Purbachal Hospital BD', // 20 characters
     'Jalrang Work Station', // 20 characters
     'Global Tour & Resorts', // 21 characters
